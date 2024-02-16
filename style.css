@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+:root {
+    --font-style: Montserrat;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.padding {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.text__style {
+    font-family: var(--font-style);
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+.header__container {
+    background-color: rgb(150, 150, 150);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.adap__block {
+    display: flex;
+    padding-top: 5vh;
+}
+
+.additionally__title {
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width:699px) {
+    .adap__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        max-width: 177px;
+        max-height: 200px;
+    }
+
+    .main__container {
+        display: flex;
+        gap: 3vw;
+    }
+
+    .additionally__title {
+        padding: 5px 0 10px 0;
+    }
+
+    .additionally__text {
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:901px) {
+    .adap__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        max-width: 250px;
+        max-height: 300px;
+    }
+
+    .main__container {
+        display: flex;
+        gap: 3vw;
+    }
+
+    .additionally__title {
+        padding: 5px 0 10px 0;
+    }
+
+    .additionally__text {
+        width: 95%;
+    }
+    .main__right{
+        display: none;
+    }
+}
+@media screen and (min-width:902px) {
+    .additionally{
+        padding-left: 20px;
+    }
+}
+.hidden {
+    display: none;
+}
